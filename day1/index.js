@@ -1,4 +1,3 @@
-const fs = require("fs");
 const reader = require("line-reader");
 function parseInput(path) {
     let input = [[]];
@@ -15,7 +14,7 @@ function parseInput(path) {
             const secondResult = secondPart(input);
 
             console.table({
-                'First part': firstResult,
+                'First result': firstResult,
                 'Second result': secondResult
             })
         }
@@ -38,6 +37,6 @@ const secondPart = (data) => {
     return maxedValues;
 }
 
-console.time('truc')
+console.time('time')
 parseInput('./data.txt')
-console.timeEnd('truc')
+console.timeEnd('time')
