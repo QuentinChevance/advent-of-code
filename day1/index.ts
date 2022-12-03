@@ -23,6 +23,7 @@ function parseInput(path) {
         const firstResult = firstPart(input)
         const secondResult = secondPart(input)
 
+        console.timeEnd('time')
         console.table({
             'First result': firstResult,
             'Second result': secondResult,
@@ -51,6 +52,5 @@ const secondPart = (data: number[][]) => {
 
 console.time('time')
 parseInput('./data.txt')
-console.timeEnd('time')
 
 export {}
